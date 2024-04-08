@@ -1,26 +1,26 @@
 @font-face {
     font-family: "BigNoodleTitling"; /* TITULOS */
-    src: url(./assets/fonts/BigNoodleTitling/big_noodle_titling.ttf);
+    src: url(../assets/fonts/BigNoodleTitling/big_noodle_titling.ttf);
 }
 
 @font-face {
     font-family: "Gabarito"; /* MENU DE NAVEGAÇÃO */
-    src: url(./assets/fonts/Gabarito/static/Gabarito-Medium.ttf);
+    src: url(../assets/fonts/Gabarito/static/Gabarito-Medium.ttf);
 }
 
 @font-face {
     font-family: "Montserrat"; /* CORPO */
-    src: url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+    src: url(../assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto-bold"; /* SUB TITULOS */
-    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+    src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: "Oswald"; /* PERSONAGENS */
-    src: url(./assets/fonts/Oswald/static/Oswald-Regular.ttf);
+    src: url(../assets/fonts/Oswald/static/Oswald-Regular.ttf);
 }
 
 :root {
@@ -46,7 +46,7 @@ body {
 }
 
 .header-content {
-    font-family: "Gabarito";
+    font-family: "Gabarito", sans-serif;
     text-decoration: none;
     color: rgb(29, 29, 29);
     font-size: 1.9rem;
@@ -98,7 +98,7 @@ body {
     letter-spacing: 10px;
 
     text-align: center;
-    font-family: "BigNoodleTitling";
+    font-family: "BigNoodleTitling", sans-serif;
     font-style: italic;
     text-shadow: var(--sombra-texto);
 }
@@ -106,7 +106,7 @@ body {
 .subtitle {
     color: white;
     text-align: center;
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     font-style: italic;
     text-shadow: var(--sombra-texto);
 }
@@ -117,14 +117,14 @@ body {
 }
 
 .txt-corpo {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     text-align: justify;
     font-weight: normal;
 }
 
 .final {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -135,7 +135,7 @@ body {
     padding: 10px;
     border-radius: 1rem;
 
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     color: white;
     font-size: 2rem;
     text-align: center;
@@ -182,20 +182,20 @@ body {
     font-size: 4rem;
     letter-spacing: 8px;
     text-align: center;
-    font-family: "BigNoodleTitling";
+    font-family: "BigNoodleTitling", sans-serif;
     text-shadow: var(--sombra-texto);
 }
 
 .subtitle-footer {
     color: white;
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     text-shadow: rgba(0, 0, 0, 0.3) 6px 6px 6px;
 
     text-align: center;
 }
 
 .txt-footer {
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.3) 6px 6px 6px;
     font-size: 1.1rem;
@@ -214,7 +214,7 @@ body {
 }
 
 .texto-personagem {
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
     font-size: 2rem;
     color: white;
     text-align: center;
@@ -242,7 +242,7 @@ body {
 /* Pagina Instruções */
 
 .number-list {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     margin-left: 1rem;
 }
 
@@ -257,14 +257,14 @@ body {
     font-size: 3.5rem;
     letter-spacing: 10px;
     text-align: center;
-    font-family: "BigNoodleTitling";
+    font-family: "BigNoodleTitling", sans-serif;
     font-style: italic;
     text-shadow: var(--sombra-texto);
 }
 
 #style-timer {
     margin-top: 1rem;
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     color: white;
     text-shadow: var(--sombra-texto);
     font-size: 1.8rem;
@@ -272,7 +272,7 @@ body {
 
 #timer {
     margin-top: 1rem;
-    font-family: "Roboto-bold";
+    font-family: "Roboto-bold", sans-serif;
     color: white;
     text-shadow: var(--sombra-texto);
     font-size: 1.8rem;
