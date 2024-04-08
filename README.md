@@ -43,4 +43,4 @@ Desenvolvido por: Claudio Silva Rodrigues Filho e Renato Marchi Pereira Gomes.
 Copyright© 2023, Claudio Filho & Renato Marchi. Todos os direitos reservados aos criadores
 
 <h2 align="left">📝 Licença</h2>
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo LICENSE.md para mais detalhes.
