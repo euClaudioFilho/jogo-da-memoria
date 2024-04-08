@@ -1,0 +1,386 @@
+@font-face {
+    font-family: "BigNoodleTitling"; /* TITULOS */
+    src: url(./assets/fonts/BigNoodleTitling/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: "Gabarito"; /* MENU DE NAVEGAÇÃO */
+    src: url(./assets/fonts/Gabarito/static/Gabarito-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat"; /* CORPO */
+    src: url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold"; /* SUB TITULOS */
+    src: url(./assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Oswald"; /* PERSONAGENS */
+    src: url(./assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+:root {
+    --sombra-caixa: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    --sombra-texto: rgba(0, 0, 0, 0.3) 6px 6px 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(78, 189, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(78, 189, 255, 1) 0%,
+        rgba(0, 134, 255, 1) 50%,
+        rgba(78, 189, 255, 1) 100%
+    );
+}
+
+.header-content {
+    font-family: "Gabarito";
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+    font-size: 1.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-content:hover {
+    color: rgb(0, 0, 0);
+    opacity: 0.3;
+}
+
+.navigation {
+    display: block;
+    border-bottom: 0.2rem solid rgb(240, 100, 20);
+    transition: all 0.2s ease-in-out;
+}
+
+.laranja {
+    color: rgb(255, 121, 44);
+}
+
+.menu {
+    width: 100%;
+    height: 9.8vh;
+    margin: 5px auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+    scale: 0.99;
+    position: fixed;
+    z-index: 2;
+
+    display: flex;
+    padding: 20px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu:hover {
+    box-shadow: var(--sombra-caixa);
+    scale: 1;
+    z-index: 2;
+}
+
+.title {
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 10px;
+
+    text-align: center;
+    font-family: "BigNoodleTitling";
+    font-style: italic;
+    text-shadow: var(--sombra-texto);
+}
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-family: "Roboto-bold";
+    font-style: italic;
+    text-shadow: var(--sombra-texto);
+}
+
+.main {
+    padding-top: 10rem;
+    justify-content: center;
+}
+
+.txt-corpo {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    text-align: justify;
+    font-weight: normal;
+}
+
+.final {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.playBtn {
+    background-color: rgb(240, 100, 20);
+    padding: 10px;
+    border-radius: 1rem;
+
+    font-family: "Roboto-bold";
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.playBtn:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    opacity: 0.3;
+}
+
+.content {
+    width: 96vw;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 1.1rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--sombra-caixa);
+}
+
+.rodape {
+    background: rgb(18, 21, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(18, 21, 36, 1) 0%,
+        rgba(35, 41, 64, 1) 50%,
+        rgba(18, 21, 36, 1) 100%
+    );
+    width: 100%;
+    height: 30%;
+    padding-bottom: 1vw;
+}
+
+.title-footer {
+    padding-top: 20px;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 8px;
+    text-align: center;
+    font-family: "BigNoodleTitling";
+    text-shadow: var(--sombra-texto);
+}
+
+.subtitle-footer {
+    color: white;
+    font-family: "Roboto-bold";
+    text-shadow: rgba(0, 0, 0, 0.3) 6px 6px 6px;
+
+    text-align: center;
+}
+
+.txt-footer {
+    font-family: "Roboto-bold";
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.3) 6px 6px 6px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Pagina Personagens */
+
+.personagens-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 7%;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    text-decoration: none;
+}
+
+.texto-personagem {
+    font-family: "Oswald";
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.animacao-personagem {
+    scale: 0.7;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.animacao-personagem:hover {
+    scale: 0.9;
+    transition: all 0.3s ease-in-out;
+    text-shadow: rgba(0, 0, 0, 0.3) 6px 4px 8px;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.3));
+    z-index: 1;
+}
+
+.link-personagem {
+    text-decoration: none;
+}
+
+/* Pagina Instruções */
+
+.number-list {
+    font-family: "Montserrat";
+    margin-left: 1rem;
+}
+
+/* Pagina Jogo */
+
+.main-jogo {
+    padding-top: 7%;
+}
+
+#title-jogo {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: "BigNoodleTitling";
+    font-style: italic;
+    text-shadow: var(--sombra-texto);
+}
+
+#style-timer {
+    margin-top: 1rem;
+    font-family: "Roboto-bold";
+    color: white;
+    text-shadow: var(--sombra-texto);
+    font-size: 1.8rem;
+}
+
+#timer {
+    margin-top: 1rem;
+    font-family: "Roboto-bold";
+    color: white;
+    text-shadow: var(--sombra-texto);
+    font-size: 1.8rem;
+}
+
+.vermelho {
+    color: red;
+}
+
+.background-game {
+    width: 50%;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--sombra-caixa);
+
+    background-color: white;
+    border-radius: 1rem;
+}
+
+#demo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+#demo > img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 0.5rem;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.3));
+    transition: all 0.2s ease-in-out;
+    scale: 1;
+}
+
+#demo > img:hover {
+    scale: 1.2;
+    transition: all 0.2s ease-in-out;
+    text-shadow: rgba(0, 0, 0, 0.3) 6px 4px 8px;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.3));
+    z-index: 1;
+}
+
+@media screen and (max-width: 425px) {
+    .header-content,
+    .txt-corpo,
+    .final,
+    .txt-footer,
+    .texto-personagem {
+        font-size: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: space-between;
+    }
+
+    .title,
+    #title-jogo {
+        font-size: 2rem;
+        letter-spacing: 7px;
+    }
+
+    .subtitle,
+    .subtitle-footer,
+    #style-timer,
+    #timer {
+        font-size: 1.1rem;
+    }
+
+    .playBtn {
+        font-size: 1.3rem;
+    }
+
+    .title-footer {
+        font-size: 2rem;
+        letter-spacing: 7px;
+    }
+
+    .personagens-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-top: 25%;
+        column-gap: 0.5rem;
+        row-gap: 0.4rem;
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .main-jogo {
+        padding-top: 30%;
+    }
+
+    .background-game {
+        width: 90%;
+    }
+
+    #demo img {
+        width: 25%;
+        height: 25%;
+    }
+}
